@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-image: url("./OIP.jpeg.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+#chat1,#chat2{
+    border: 1px solid gainsboro;
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+    background-image: url('./images\ \(1\).jpeg.jpg');
+    /* border-radius: 15px; */
+}
+#box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 47vw;
+    align-items: center;
+}
+[type='text']{
+    display: inline-block;
+    width: 280px;
+    border-radius: 5px;
+    height: 20px;
+}
+p{
+    color: black;
+}
+#chatArea1,#chatArea2{
+    width: 100%;
+    height: 475px;
+    padding-right: -10px;
+    overflow-y: scroll;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="chat1">
+            <div id="chatArea1"></div>
+            <div id="inp1">
+                <input type="text" id="inp11">
+            <input type="submit" value="send" id="sent1">
+            </div>
+        </div>
+        <div id="chat2">
+            <div id="chatArea2"></div>
+            <div id="inp2">
+                <input type="text" id="inp12">
+            <input type="submit" value="send" id="sent2">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
